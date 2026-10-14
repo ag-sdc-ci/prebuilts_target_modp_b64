@@ -1,0 +1,6 @@
+shadow prebuilt repo: modp_b64 (target)
+  upstream: external/modp_b64
+  api-level: 34 (local ag-build rebuild 2026-10-11, branch 34-20261011)
+  blobs: org.blisslabs.ag.modp_b64.apex org.blisslabs.ag.modp_b64.dev.apex org.blisslabs.ag.modp_b64.doc.apex 
+  dev-src: none
+  date: 2026-10-11
