@@ -68,6 +68,7 @@ cc_prebuilt_library_static {
         "//apex_available:anyapex",
         "//apex_available:platform",
     ],
-    min_sdk_version: "29",
+    sdk_version: "current",
+    stl: "c++_static",
     srcs: ["dev-src/lib/libmodpb64_ndk.a"],
 }
