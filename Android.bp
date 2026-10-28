@@ -7,8 +7,8 @@ package {
 
 prebuilt_apex {
     name: "org.blisslabs.ag.modp_b64",
-    apex_name: "org.blisslabs.ag.modp_b64",
-    source_apex_name: "org.blisslabs.ag.modp_b64",
+    apex_name: "modp_b64",
+    source_apex_name: "modp_b64",
     arch: {
         x86_64: {
             src: "org.blisslabs.ag.modp_b64.apex",
@@ -30,7 +30,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
 }
 
@@ -42,7 +42,7 @@ cc_prebuilt_library_static {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
     prefer: true,
     apex_available: [
@@ -50,7 +50,7 @@ cc_prebuilt_library_static {
         "//apex_available:platform",
     ],
     min_sdk_version: "29",
-    srcs: ["dev-src/lib/libmodpb64.a"],
+    srcs: ["lib64/libmodpb64.a"],
 }
 
 cc_prebuilt_library_static {
@@ -61,7 +61,7 @@ cc_prebuilt_library_static {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
     prefer: true,
     apex_available: [
@@ -70,5 +70,5 @@ cc_prebuilt_library_static {
     ],
     sdk_version: "current",
     stl: "c++_static",
-    srcs: ["dev-src/lib/libmodpb64_ndk.a"],
+    srcs: ["lib64/libmodpb64_ndk.a"],
 }
